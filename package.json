@@ -16,7 +16,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://harrysaini.github.io/play-tic-tac-toe",
+  "homepage": "http://harrysaini.github.io/simon-game",
   "devDependencies": {
     "gh-pages": "^1.0.0"
   }
