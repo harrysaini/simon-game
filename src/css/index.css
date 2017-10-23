@@ -39,6 +39,7 @@ body{
 	width: 200px;
 	border: 12px solid #333;
 	background: white;
+	cursor: pointer;
 }
 
 .inline{
@@ -98,6 +99,10 @@ body{
 	font-size: 80%;
 }
 
+.led-off{
+	color: black;
+}
+
 
 .simple-btn{
 	padding: 10px;
@@ -114,13 +119,21 @@ body{
 	background: #808000;
 }
 
+.red-btn{
+	background: #ff0000;
+}
+
+.red-btn:hover {
+	background : #b30000;
+}
+
 .green-btn:hover{
 	background: #804000;
 }
 
 
 .sw-slot {
-    height: 20px;
+    height: 26px;
     width: 40px;
     background-color: #222;
     position: relative;
@@ -130,18 +143,67 @@ body{
 }
 
 
-.sw-on {
-    left: 20px;
+
+.little-up-left{
+	position: relative;
+	top : -4px;
+	left: 4px
 }
 
 .switch {
-    height: 16px;
-    width: 16px;
+    height: 22px;
+    width: 16px; 
     border-radius: 4px;
-    background-color: #3193DE;
+    background-color: #e2bae4 ;
     position: relative;
     border: 2px solid #333;
 }
+
+.sw-on {
+    left: 20px;
+    background-color: #3193DE;
+}
+
+.logo {
+    font-family: 'Alfa Slab One', cursive;
+    color: #222;
+    font-size: 3.2em;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+@keyframes blink{
+	0%{
+		color : #DC0D29; 
+	}
+	25%{
+		color: black;
+	}
+	50%{
+		color: #DC0D29;
+	}
+	75%{
+		color: black;
+	}
+	100%{
+		color: #DC0D29;
+	}
+}
+
+
+.led-blink{
+	animation-name: blink;
+	animation-duration: 1s;
+}
+
+
+.no-click{
+	pointer-events: none;
+	cursor: default;
+}
+
 
 @media only screen and (max-width: 40em) {
 
@@ -171,4 +233,39 @@ body{
 
 	}
 
+}
+
+
+
+
+.red{
+  background-color : #9f0f17;
+}
+
+.green{
+  background-color : #00a74a;
+}
+
+.yellow{
+  background-color : #cca707;
+}
+
+.blue{
+  background-color : #094a8f;
+}
+
+.yellow.light , .yellow:active{
+  background-color : #fed93f;
+}
+
+.blue.light, .blue:active{
+  background-color : #1c8cff;
+}
+
+.red.light , .red:active{
+  background-color : #ff4c4c;
+}
+
+.green.light , .green:active{
+  background-color : #13ff7c;
 }
