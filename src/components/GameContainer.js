@@ -107,7 +107,7 @@ export class GameContainer extends Component{
 
 	handleCorrectSimonSequence(){
 		var currentCount = this.state.currentCount + 1 ;
-		if(this.state.currentCount===2){
+		if(this.state.currentCount===20){
 			this.setState({
 				gameState : 'won'
 			});
