@@ -1,3 +1,2 @@
-a simple tic tac toe game with ui in react.
-
-used min max lago 
+simon game
+free code camp project
